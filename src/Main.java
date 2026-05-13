@@ -10,7 +10,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        String path = "ADICIONE UMA PASTA AQUI";
+        String path = "C:\\Users\\alejo\\Desktop\\ESTUDO\\NelioAlves-Udemy";
 
         ClientRepository repo = new FileClientRepository(path);
         ClientService service = new ClientService(repo);

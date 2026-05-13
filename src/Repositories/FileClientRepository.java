@@ -23,7 +23,7 @@ public class FileClientRepository implements ClientRepository {
         File file = new File(baseFolder + File.separator + "clients",fileName);
 
         try(BufferedWriter bw = new BufferedWriter(new FileWriter(file))){
-            bw.write(client.toString());
+            bw.write(client.getId()+","+client.getName()+","+client.getEmail()+","+client.getPhone());
         } catch (IOException e){
             System.out.println("Error to save client: "+e.getMessage());
         }

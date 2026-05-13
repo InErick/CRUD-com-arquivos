@@ -17,36 +17,20 @@ public class Client {
         return id;
     }
 
-    public void setId(long id) {
-        this.id = id;
-    }
-
     public String getName() {
         return name;
-    }
-
-    public void setNome(String name) {
-        this.name = name;
     }
 
     public String getEmail() {
         return email;
     }
 
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getTelefone() {
+    public String getPhone() {
         return phone;
-    }
-
-    public void setTelefone(String phone) {
-        this.phone = phone;
     }
 
     @Override
     public String toString() {
-        return id+","+name+","+email+","+phone;
+        return "ID: "+id+", Name: "+name+", Email: "+email+", Phone: "+phone;
     }
 }
